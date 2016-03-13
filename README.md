@@ -1,0 +1,1 @@
+This is a very simple Python script that I just wrote up to quickly get an idea of how far I was from leveling up on Playstation Network. Not particularly complex nor elegant, but that may or may not change in the future.
