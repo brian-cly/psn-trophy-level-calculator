@@ -23,4 +23,4 @@ while points > level_array[level-1]:
 	level += 1
 else:
 	left = level_array[level-1] - points
-	print('You are currently at level ' + str(level-1) + '. You need ' + str(left) + ' points until level ' + str(level) + '.')
+	print 'You are currently at level ' + str(level-1) + '. You need ' + str(left) + ' points until level ' + str(level) + '.'
