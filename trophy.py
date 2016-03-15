@@ -8,15 +8,15 @@ platinum = input('Platinum trophies: ')
 points = 15 * bronze + 30 * silver + 90 * gold + 180 * platinum
 
 level_array=[0,200,600,1200,2400,4000]
-i = 0
-while i < 6:
-	level_array.append(level_array[i+5] + 2000)
+i = 5
+while i < 11:
+	level_array.append(level_array[i] + 2000)
 	i += 1
-while i < 20:
-	level_array.append(level_array[i+5] + 8000)
+while i < 25:
+	level_array.append(level_array[i] + 8000)
 	i += 1
 while points > level_array[-1]:
-	level_array.append(level_array[i+5] + 10000)
+	level_array.append(level_array[i] + 10000)
 	i += 1
 level = 1
 while points > level_array[level-1]:
