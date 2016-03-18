@@ -23,4 +23,6 @@ while points > level_array[level-1]:
 	level += 1
 else:
 	left = level_array[level-1] - points
-	print 'You are currently at level ' + str(level-1) + '. You need ' + str(left) + ' points until level ' + str(level) + '.'
+	points_in_level = level_array[level-1] - level_array[level-2]
+	percentage = str(100 * (points_in_level - left) / points_in_level) + '%'
+	print 'You are currently at level ' + str(level-1) + ' and ' + percentage + '. You need ' + str(left) + ' points until level ' + str(level) + '.'
